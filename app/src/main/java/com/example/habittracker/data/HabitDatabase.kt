@@ -12,6 +12,7 @@ abstract class HabitDatabase : RoomDatabase() {
 
     companion object {
         @Volatile private var instance: HabitDatabase? = null
+        // Learnign git
 
         fun getDatabase(context: Context): HabitDatabase {
             return instance ?: synchronized(this) {
